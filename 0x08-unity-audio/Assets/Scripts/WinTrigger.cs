@@ -8,6 +8,7 @@ public class WinTrigger : MonoBehaviour
     public GameObject timerCanvas;
     public Timer timer;
     public AudioSource bgm;
+    public AudioSource sting;
 
     void OnTriggerEnter()
     {
@@ -19,5 +20,6 @@ public class WinTrigger : MonoBehaviour
         timerCanvas.SetActive(false);
         winCanvas.SetActive(true);
         bgm.Stop();
+        sting.Play();
     }
 }

@@ -106,6 +106,7 @@ public class PlayerController : MonoBehaviour
         {
             animate.SetTrigger("isFalling");
             thePlayer.transform.position = spawnPoint.transform.position;
+            footsteps.Play();
             lockmovement = true;
         }
 
